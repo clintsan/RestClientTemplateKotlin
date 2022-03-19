@@ -7,11 +7,12 @@
 
     <ImageView
         android:id="@+id/ivProfileImage"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
@@ -21,6 +22,7 @@
         android:layout_marginStart="4dp"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:layout_margin="10dp"
         app:layout_constraintStart_toEndOf="@+id/ivProfileImage"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="calren24" />
@@ -29,8 +31,12 @@
         android:id="@+id/tvTweetBody"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         app:layout_constraintStart_toEndOf="@+id/ivProfileImage"
         app:layout_constraintTop_toBottomOf="@+id/tvUsername"
-        tools:text="Kanye doing his thang vs his ops" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constrainedWidth="true"
+        tools:text="Kanye doing his thing I hope you're doing your thing too I am a dead beat cousin I hate family reunions " />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
